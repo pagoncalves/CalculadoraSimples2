@@ -270,7 +270,7 @@ public class CalculadoraSimples {
     }
 
     public int[] desce_e_sobe(int n1, int n2) {
-        n1 *= (-1);
+        n1 = -n1;
         int a[] = sequencia_a_partir_de(n2, n1);
         positivos(a);
         return a;
