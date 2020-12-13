@@ -16,4 +16,16 @@ public class Calc {
         display += n1;
     }
 
+    public void subt(double n1) {
+        display -= n1;
+    }
+
+    public void mult(double n1) {
+        display *= n1;
+    }
+
+    public void divi(double n1) {
+        display /= n1;
+    }
+
 }
