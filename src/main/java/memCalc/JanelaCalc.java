@@ -39,7 +39,6 @@ public class JanelaCalc extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         display.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
-        display.setText("Resultado");
 
         n1.setFont(new java.awt.Font("Ubuntu", 0, 22)); // NOI18N
         n1.setText("1");
@@ -257,15 +256,18 @@ public class JanelaCalc extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void somaBotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_somaBotActionPerformed
-       
+
         display.setText("+");
+
     }//GEN-LAST:event_somaBotActionPerformed
 
     private void n0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n0ActionPerformed
-        display.setText("0");
+        String n0 = display.getText();
+        display.setText(n0 + 0);
     }//GEN-LAST:event_n0ActionPerformed
 
     private void subtBotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subtBotActionPerformed
+        display.getText();
         display.setText("-");
     }//GEN-LAST:event_subtBotActionPerformed
 
@@ -274,39 +276,48 @@ public class JanelaCalc extends javax.swing.JFrame {
     }//GEN-LAST:event_apagarBotActionPerformed
 
     private void n7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n7ActionPerformed
-        display.setText("7");
+        String n7 = display.getText();
+        display.setText(n7 + 7);
+
     }//GEN-LAST:event_n7ActionPerformed
 
     private void n8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n8ActionPerformed
-        display.setText("8");
+        String n8 = display.getText();
+        display.setText(n8 + 8);
     }//GEN-LAST:event_n8ActionPerformed
 
     private void n9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n9ActionPerformed
-        display.setText("9");
+        String n9 = display.getText();
+        display.setText(n9 + 9);
     }//GEN-LAST:event_n9ActionPerformed
 
     private void n4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n4ActionPerformed
-        display.setText("4");
-    }//GEN-LAST:event_n4ActionPerformed
+        String n4 = display.getText();
+        display.setText(n4 + 4);    }//GEN-LAST:event_n4ActionPerformed
 
     private void n5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n5ActionPerformed
-        display.setText("5");
+        String n5 = display.getText();
+        display.setText(n5 + 5);
     }//GEN-LAST:event_n5ActionPerformed
 
     private void n6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n6ActionPerformed
-        display.setText("6");
+        String n6 = display.getText();
+        display.setText(n6 + 6);
     }//GEN-LAST:event_n6ActionPerformed
 
     private void n1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n1ActionPerformed
-        display.setText("1");
+        String n1 = display.getText();
+        display.setText(n1 + 1);
     }//GEN-LAST:event_n1ActionPerformed
 
     private void n2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n2ActionPerformed
-        display.setText("2");
+        String n2 = display.getText();
+        display.setText(n2 + 2);
     }//GEN-LAST:event_n2ActionPerformed
 
     private void n3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n3ActionPerformed
-        display.setText("3");
+        String n3 = display.getText();
+        display.setText(n3 + 3);
     }//GEN-LAST:event_n3ActionPerformed
 
     private void multBotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multBotActionPerformed
