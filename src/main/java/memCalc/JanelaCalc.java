@@ -7,6 +7,7 @@ public class JanelaCalc extends javax.swing.JFrame {
      */
     public JanelaCalc() {
         initComponents();
+        calc = new Calc();
     }
 
     /**
@@ -255,81 +256,157 @@ public class JanelaCalc extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private Calc calc;
+    private boolean apaga;
+    private String operacao;
+
     private void somaBotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_somaBotActionPerformed
 
-        display.setText("+");
+        String som = display.getText();
+        double soma = Double.parseDouble(som);
+        calc.setDisplay(soma);
+        apaga = true;
 
     }//GEN-LAST:event_somaBotActionPerformed
 
     private void n0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n0ActionPerformed
+        if (apaga) {
+            display.setText(" ");
+            apaga = false;
+        }
         String n0 = display.getText();
         display.setText(n0 + 0);
     }//GEN-LAST:event_n0ActionPerformed
 
     private void subtBotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subtBotActionPerformed
-        display.getText();
-        display.setText("-");
+        String sub = display.getText();
+        double subt = Double.parseDouble(sub);
+        calc.setDisplay(subt);
+        apaga = true;
     }//GEN-LAST:event_subtBotActionPerformed
 
     private void apagarBotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_apagarBotActionPerformed
-        //limpar tela
+        display.setText("");
     }//GEN-LAST:event_apagarBotActionPerformed
 
     private void n7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n7ActionPerformed
+        if (apaga) {
+            display.setText(" ");
+            apaga = false;
+        }
         String n7 = display.getText();
         display.setText(n7 + 7);
 
     }//GEN-LAST:event_n7ActionPerformed
 
     private void n8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n8ActionPerformed
+        if (apaga) {
+            display.setText(" ");
+            apaga = false;
+        }
         String n8 = display.getText();
         display.setText(n8 + 8);
     }//GEN-LAST:event_n8ActionPerformed
 
     private void n9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n9ActionPerformed
+        if (apaga) {
+            display.setText(" ");
+            apaga = false;
+        }
         String n9 = display.getText();
         display.setText(n9 + 9);
     }//GEN-LAST:event_n9ActionPerformed
 
     private void n4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n4ActionPerformed
+        if (apaga) {
+            display.setText(" ");
+            apaga = false;
+        }
         String n4 = display.getText();
         display.setText(n4 + 4);    }//GEN-LAST:event_n4ActionPerformed
 
     private void n5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n5ActionPerformed
+        if (apaga) {
+            display.setText(" ");
+            apaga = false;
+        }
         String n5 = display.getText();
         display.setText(n5 + 5);
     }//GEN-LAST:event_n5ActionPerformed
 
     private void n6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n6ActionPerformed
+        if (apaga) {
+            display.setText(" ");
+            apaga = false;
+        }
         String n6 = display.getText();
         display.setText(n6 + 6);
     }//GEN-LAST:event_n6ActionPerformed
 
     private void n1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n1ActionPerformed
+        if (apaga) {
+            display.setText(" ");
+            apaga = false;
+        }
         String n1 = display.getText();
         display.setText(n1 + 1);
+
     }//GEN-LAST:event_n1ActionPerformed
 
     private void n2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n2ActionPerformed
+        if (apaga) {
+            display.setText(" ");
+            apaga = false;
+        }
         String n2 = display.getText();
         display.setText(n2 + 2);
     }//GEN-LAST:event_n2ActionPerformed
 
     private void n3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n3ActionPerformed
+        if (apaga) {
+            display.setText(" ");
+            apaga = false;
+        }
         String n3 = display.getText();
         display.setText(n3 + 3);
     }//GEN-LAST:event_n3ActionPerformed
 
     private void multBotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multBotActionPerformed
-        display.setText("*");
+        String mul = display.getText();
+        double mult = Double.parseDouble(mul);
+        calc.setDisplay(mult);
+        apaga = true;
     }//GEN-LAST:event_multBotActionPerformed
 
     private void diviBotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_diviBotActionPerformed
-        display.setText("/");
+        String div = display.getText();
+        double divi = Double.parseDouble(div);
+        calc.setDisplay(divi);
+        apaga = true;
     }//GEN-LAST:event_diviBotActionPerformed
 
     private void igualBotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_igualBotActionPerformed
-        display.setText("=");
+        String res = display.getText();
+        double igual = Double.parseDouble(res);
+        switch (operacao) {
+            case "soma":
+                calc.soma(igual);
+                break;
+            case "subt":
+                calc.subt(igual);
+                break;
+            case "mult":
+                calc.mult(igual);
+                break;
+            case "divi":
+                calc.divi(igual);
+                break;
+
+        }
+        double result = calc.getDisplay();
+        String resultado = Double.toString(result);
+        display.setText(resultado);
+        apaga = true;
     }//GEN-LAST:event_igualBotActionPerformed
 
     /**
