@@ -268,7 +268,7 @@ public class JanelaCalc extends javax.swing.JFrame {
 
     private void n0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n0ActionPerformed
         if (apaga) {
-            display.setText(" ");
+            display.setText("");
             apaga = false;
         }
         String n0 = display.getText();
@@ -289,7 +289,7 @@ public class JanelaCalc extends javax.swing.JFrame {
 
     private void n7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n7ActionPerformed
         if (apaga) {
-            display.setText(" ");
+            display.setText("");
             apaga = false;
         }
         String n7 = display.getText();
@@ -299,7 +299,7 @@ public class JanelaCalc extends javax.swing.JFrame {
 
     private void n8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n8ActionPerformed
         if (apaga) {
-            display.setText(" ");
+            display.setText("");
             apaga = false;
         }
         String n8 = display.getText();
@@ -308,7 +308,7 @@ public class JanelaCalc extends javax.swing.JFrame {
 
     private void n9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n9ActionPerformed
         if (apaga) {
-            display.setText(" ");
+            display.setText("");
             apaga = false;
         }
         String n9 = display.getText();
@@ -317,7 +317,7 @@ public class JanelaCalc extends javax.swing.JFrame {
 
     private void n4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n4ActionPerformed
         if (apaga) {
-            display.setText(" ");
+            display.setText("");
             apaga = false;
         }
         String n4 = display.getText();
@@ -325,7 +325,7 @@ public class JanelaCalc extends javax.swing.JFrame {
 
     private void n5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n5ActionPerformed
         if (apaga) {
-            display.setText(" ");
+            display.setText("");
             apaga = false;
         }
         String n5 = display.getText();
@@ -334,7 +334,7 @@ public class JanelaCalc extends javax.swing.JFrame {
 
     private void n6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n6ActionPerformed
         if (apaga) {
-            display.setText(" ");
+            display.setText("");
             apaga = false;
         }
         String n6 = display.getText();
@@ -343,7 +343,7 @@ public class JanelaCalc extends javax.swing.JFrame {
 
     private void n1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n1ActionPerformed
         if (apaga) {
-            display.setText(" ");
+            display.setText("");
             apaga = false;
         }
         String n1 = display.getText();
@@ -353,7 +353,7 @@ public class JanelaCalc extends javax.swing.JFrame {
 
     private void n2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n2ActionPerformed
         if (apaga) {
-            display.setText(" ");
+            display.setText("");
             apaga = false;
         }
         String n2 = display.getText();
@@ -362,7 +362,7 @@ public class JanelaCalc extends javax.swing.JFrame {
 
     private void n3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_n3ActionPerformed
         if (apaga) {
-            display.setText(" ");
+            display.setText("");
             apaga = false;
         }
         String n3 = display.getText();
